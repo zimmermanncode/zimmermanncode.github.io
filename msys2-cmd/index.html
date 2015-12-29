@@ -8,4 +8,7 @@ bitbucket_project: zimmermanncode/MSYS2-cmd
 {% include fork-me-on-github.html %}
 {% include fork-me-on-bitbucket.html %}
 
-{% include markdown-body.html path='msys2-cmd/README.md' %}
+{% capture README %}
+{% include msys2-cmd/README.md %}
+{% endcapture %}
+{% include markdown-body.html source=README %}

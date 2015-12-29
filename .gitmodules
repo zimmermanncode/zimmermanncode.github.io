@@ -1,3 +1,3 @@
 [submodule "_includes/msys2-cmd"]
 	path = _includes/msys2-cmd
-	url = git@github.com:zimmermanncode/MSYS2-cmd.git
+	url = https://github.com:zimmermanncode/MSYS2-cmd.git

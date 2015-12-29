@@ -1,0 +1,4 @@
+title: "zimmermann::code"
+
+markdown: redcarpet
+highlighter: pygments

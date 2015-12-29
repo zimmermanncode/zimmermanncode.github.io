@@ -1,0 +1,6 @@
+<div class="markdown-body">
+  {% capture source %}
+  {% include {{ include.path }} %}
+  {% endcapture %}
+  {{ source | markdownify }}
+</div>

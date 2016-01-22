@@ -1,2 +1,4 @@
 ^_includes/msys2-cmd/
 ^_site/
+
+^\.sass-cache

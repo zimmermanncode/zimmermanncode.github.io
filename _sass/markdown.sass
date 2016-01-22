@@ -1,0 +1,49 @@
+@import common/colors
+@import common/fonts
+@import common/links
+
+.markdown-body
+    +font
+    padding: 130px 50px 50px 130px
+    border: 2px solid white
+    border-left: none
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+    background-color: black
+    color: white
+
+.markdown-body h1
+    color: $blue
+    border-bottom: 2px solid white
+
+.markdown-body h1, .markdown-body p
+    margin-left: 55px
+
+.markdown-body h2
+    padding-left: 0.3em
+    padding-top: 0.2em
+    border-left: 25px solid $blue
+    border-bottom: none
+    background-color: white
+    color: black
+
+.markdown-body h3
+    padding-left: 0.3em
+    padding-top: 0.1em
+    padding-bottom: 0.2em
+    border-left: 20px solid $yellow
+    background-color: white
+    color: black
+
+.markdown-body a
+    +link
+
+.markdown-body a:hover
+    +hover-link
+
+.markdown-body img
+    background-color: transparent
+
+.markdown-body .highlight pre
+    border-left: 10px solid #fe7d37
+    background-color: black

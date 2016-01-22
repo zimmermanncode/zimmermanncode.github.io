@@ -1,0 +1,74 @@
+@import common/colors
+@import common/fonts
+@import common/links
+
+#nav
+    z-index: 1
+    position: fixed
+    top: 0px
+    left: 0px
+    width: 140px
+
+#logo
+    width: 130px
+    height: 130px
+    box-shadow: 0px 0px 10px black
+
+#menu
+    width: 130px
+    border-top: 20px solid $purple
+    border-bottom: 20px solid $purple
+
+#menu a, #menu a:hover, #menu a:active, #menu a:visited
+    +link-decoration
+    padding: 0.1em 0.5em 0.3em 0.5em
+
+#ganymede
+    position: relative
+    width: 128px
+    height: 46px
+    border-right: 2px solid $purple
+    border-bottom: 4px solid $purple
+    border-bottom-right-radius: 10px
+
+#ganymede a:first-of-type, #ganymede a:first-of-type:hover,
+#ganymede a:first-of-type:active, #ganymede a:first-of-type:visited
+    +link-decoration
+    z-index: 1
+    display: inline-block
+    position: absolute
+    top: 0px
+    left: 0px
+    line-height: 46px
+    width: 118px
+    padding-left: 10px
+    border-bottom-right-radius: 7px
+    text-shadow: 0px 0px 1px $blue
+    color: $blue
+
+#ganymede:hover a:first-of-type, #ganymede:hover a:first-of-type:hover
+    box-shadow: 0px 0px 3px 0px black inset
+    background-color: $blue
+    color: black
+
+#ganymede:hover #ganymede-logo-wrapper
+    background-color: white
+
+#ganymede-logo-wrapper
+    z-index: -1
+    position: absolute
+    top: -20px
+    left: 124px
+    height: 68px
+    border-bottom-right-radius: 48px
+    padding: 0px
+
+#ganymede-logo-wrapper:hover
+    background-color: $blue
+
+#ganymede-logo
+    position: relative
+    top: 21px
+    left: 1px
+    width: 48px
+    height: 48px

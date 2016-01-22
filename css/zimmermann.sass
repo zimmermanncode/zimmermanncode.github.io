@@ -1,78 +1,27 @@
 ---
 ---
 
+@import common/colors
+@import common/fonts
+@import common/links
+
 body
+    +font
     margin: 0px
     padding: 20px 20px 20px 0px
-    background-color: #777
+    background-color: $gray
     color: white
 
-.markdown-body
-    font-family: "Open Sans"
-    padding: 10%
-    border: 2px solid white
-    border-left: none
-    border-top-right-radius: 5px
-    border-bottom-right-radius: 5px
-    background-color: black
-    color: white
+#nav
+    position: fixed
 
-.markdown-body h1
-    color: #007ec6
-    border-bottom: 2px solid white
+a
+    +link
 
-.markdown-body h2
-    padding-left: 0.3em
-    padding-top: 0.2em
-    border-left: 25px solid #007ec6
-    border-bottom: none
-    background-color: white
-    color: black
+a:hover
+    +hover-link
 
-.markdown-body h3
-    padding-left: 0.3em
-    padding-top: 0.1em
-    padding-bottom: 0.2em
-    border-left: 20px solid #dfb317
-    background-color: white
-    color: black
-
-a, .markdown-body a
-    color: #fe7d37
-
-a:hover, .markdown-body a:hover
-    color: #dfb317
-    text-decoration: none
-
-.markdown-body img
-    background-color: transparent
-
-.markdown-body .highlight pre
-    background-color: black
-
-#fork-me-on-github .github-fork-ribbon
-    background-color: #dfb317
-
-#fork-me-on-gitlab
-    width: 200px
-    height: 200px
-
-#fork-me-on-gitlab .github-fork-ribbon
-    top: 65px
-    right: -93px
-    background-color: #fe7d37
-
-#fork-me-on-gitlab a
-    width: 350px
-
-#fork-me-on-bitbucket
-    width: 250px
-    height: 250px
-
-#fork-me-on-bitbucket .github-fork-ribbon
-    top: 91px
-    right: -96px
-    background-color: #007ec6
-
-#fork-me-on-bitbucket a
-    width: 400px
+@import title
+@import nav
+@import fork-ribbons
+@import markdown

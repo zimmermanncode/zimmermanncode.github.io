@@ -15,9 +15,15 @@
         />
 
   <link rel="stylesheet"
-        href="http://zimmermanncode.github.io/css/monokai.css"
+        href="{{ '/css/monokai.css' | prepend: site.baseurl }}"
         />
+
   <link rel="stylesheet"
-        href="http://zimmermanncode.github.io/css/zimmermann.css"
+        href="{{ '/css/zimmermann.css' | prepend: include.baseurl or site.baseurl }}"
         />
+
+  <script type="text/javascript"
+          src="http://code.jquery.com/jquery-2.1.4.min.js"
+          >
+  </script>
 </head>

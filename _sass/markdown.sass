@@ -13,27 +13,63 @@
     color: white
 
 .markdown-body h1
-    color: $blue
     border-bottom: 2px solid white
+    color: $blue
 
 .markdown-body h1, .markdown-body p
-    margin-left: 55px
+    margin-left: 30px
 
 .markdown-body h2
     padding-left: 0.3em
     padding-top: 0.2em
+    border: 2px solid black
     border-left: 25px solid $blue
     border-bottom: none
     background-color: white
     color: black
 
+.markdown-body h2:hover
+    border: 2px solid $blue
+    border-left-width: 25px
+
 .markdown-body h3
     padding-left: 0.3em
     padding-top: 0.1em
     padding-bottom: 0.2em
+    border: 2px solid black
     border-left: 20px solid $yellow
     background-color: white
     color: black
+
+.markdown-body h3:hover
+    border: 2px solid $yellow
+    border-left-width: 20px
+
+.markdown-body ul
+    border: 2px solid black
+    border-left: 10px solid $yellow
+
+.markdown-body ul:hover
+    border: 2px solid $yellow
+    border-left-width: 10px
+
+.markdown-body blockquote
+    border: 2px solid black
+    border-left: 10px solid $magenta
+    color: white
+
+.markdown-body blockquote:hover
+    border: 2px solid $magenta
+    border-left-width: 10px
+
+.markdown-body .highlight pre
+    border: 2px solid black
+    border-left: 10px solid $blue
+    background-color: black
+
+.markdown-body .highlight pre:hover
+    border: 2px solid $blue
+    border-left-width: 10px
 
 .markdown-body a
     +link
@@ -43,7 +79,3 @@
 
 .markdown-body img
     background-color: transparent
-
-.markdown-body .highlight pre
-    border-left: 10px solid #fe7d37
-    background-color: black

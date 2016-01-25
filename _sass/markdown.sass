@@ -13,8 +13,12 @@
     color: white
 
 .markdown-body h1
-    border-bottom: 2px solid white
+    position: relative
+    transition: top 0.5s
+    margin-top: 0px
+    background-color: black
     color: $blue
+    border-bottom: 2px solid #007ec6
 
 .markdown-body h1, .markdown-body p
     margin-left: 30px
@@ -65,6 +69,7 @@
 .markdown-body .highlight pre
     border: 2px solid black
     border-left: 10px solid $blue
+    border-radius: 0px
     background-color: black
 
 .markdown-body .highlight pre:hover

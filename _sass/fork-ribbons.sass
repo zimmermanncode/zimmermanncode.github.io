@@ -1,11 +1,16 @@
 @import common/colors
 
+.github-fork-ribbon-wrapper
+    position: fixed
+    transition: top 0.3s, right 0.3s
+
 #fork-me-on-github .github-fork-ribbon
     background-color: $yellow
 
 #fork-me-on-gitlab
     width: 200px
     height: 200px
+    transition-delay: 0.1s
 
 #fork-me-on-gitlab .github-fork-ribbon
     top: 65px
@@ -18,6 +23,7 @@
 #fork-me-on-bitbucket
     width: 250px
     height: 250px
+    transition-delay: 0.2s
 
 #fork-me-on-bitbucket .github-fork-ribbon
     top: 91px
